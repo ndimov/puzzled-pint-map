@@ -4,11 +4,15 @@ Parses the locations from a Puzzled Pint URL and saves them to a geojson
 
 import json
 import logging
+import os
 import pickle
 import re
 
 import requests
-from geopy.geocoders import Nominatim
+from geopy.geocoders import GoogleV3, Nominatim
+from dotenv import load_dotenv
+
+load_dotenv()
 
 KNOWN_ADDRESSES_FILE = "known_addresses.pkl"
 
@@ -28,7 +32,8 @@ def get_location(address, known_addresses):
         logging.debug("Using cached address")
         location = known_addresses[full_address]
     else:
-        locator = Nominatim(user_agent="puzzled-pint-map-debug")
+        # locator = Nominatim(user_agent="puzzled-pint-map")
+        locator = GoogleV3(api_key=os.environ["GOOGLE_API_KEY"])
         location = locator.geocode(full_address)
         if not location:
             logging.warning(f"Could not geocode {full_address}")
@@ -91,8 +96,8 @@ def parse_city_info_to_geojson(city_info, known_addresses, geojson, city_group=N
     geojson["features"].append(feature)
 
 
-def get_locations():
-    url = "https://puzzledpint.com/legacy-pp-locations.php?id=189"
+def get_locations(event_id):
+    url = f"https://puzzledpint.com/legacy-pp-locations.php?id={event_id}"
 
     # Create a geojson
     geojson = {"type": "FeatureCollection", "features": []}
@@ -109,9 +114,9 @@ def get_locations():
 
     pickle.dump(known_addresses, open(KNOWN_ADDRESSES_FILE, "wb"))
     # Save the geojson
-    with open("locations.geojson", "w") as outfile:
+    with open(f"data/locations_{event_id}.geojson", "w+") as outfile:
         json.dump(geojson, outfile)
 
 
 if __name__ == "__main__":
-    get_locations()
+    get_locations(190)
