@@ -1,0 +1,1172 @@
+// This is an example response from the Puzzled Pint API for June 2023 locations
+// fetched on 2023-07-07 from https://puzzledpint.com/legacy-pp-locations.php?id=189
+{
+  "locations": [
+    {
+      "city": "Amsterdam",
+      "bar": "Café Schinkelhaven",
+      "bar_url": "https://cafeschinkelhaven.nl/",
+      "start_time": "07:30 pm",
+      "stop_time": "10:30 pm",
+      "address": {
+        "street_1": "Amstelveenseweg 126",
+        "street_2": "",
+        "city": "Amsterdam",
+        "state": "NH",
+        "postal_code": "1075 XL",
+        "country": "NL"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Atlanta",
+      "bar": "Taco Mac at the Prado",
+      "bar_url": "",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "5600 Roswell Rd",
+        "street_2": "F210",
+        "city": "Atlanta",
+        "state": "GA",
+        "postal_code": "30342",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;ll be at the Taco Mac at the Prado in Sandy Springs, on Roswell Rd, just inside the Perimeter. Look for us in the covered outdoor section after 6:30PM.\u0026nbsp;Double check our FB page in case of any last minute changes.\u003c/p\u003e\u003cp\u003ehttps://www.facebook.com/PuzzledPintAtlanta/\u003c/p\u003e\u003cp\u003eHope to see you in person!\u003c/p\u003e"
+    },
+    {
+      "city": "Auckland",
+      "bar": "The Cav",
+      "bar_url": "https://www.diceandfork.co.nz",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "68 College Hill",
+        "street_2": "Freemans Bay",
+        "city": "Auckland",
+        "state": "AUK",
+        "postal_code": "1010",
+        "country": "NZ"
+      },
+      "notes": "\u003cp\u003eWe have a new location this month, it\u0026#39;s The Cav in Ponsonby.\u0026nbsp;(They have allocated us \u0026quot;the deck\u0026quot; which I think is covered but just in case maybe bring a jacket)\u003c/p\u003e\u003cp\u003eTo ensure we book you a table at the venue please register your team at\u0026nbsp;\u003ca target=\"_blank\" href=\"https://forms.gle/yK8EoYoF63NQNwKGA\"\u003ehttps://forms.gle/yK8EoYoF63NQNwKGA\u003c/a\u003e\u0026nbsp;Bookings close at 7pm Sunday night.\u0026nbsp;\u003c/p\u003e\u003cp\u003eSee you there!\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Austin",
+      "bar": "Vigilante",
+      "bar_url": "https://vigilantebar.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "7010 Easy Wind Drive, Suite 150",
+        "street_2": "",
+        "city": "Austin",
+        "state": "TX",
+        "postal_code": "78752",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe are starting to run into capacity limits with the regular patrons, so we request that you reserve your space for Tuesday. You can do this at the Vigilante website or by calling them. This isn\u0026#39;t mandatory, but will ensure your team has seating when you arrive.\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Bangalore",
+      "bar": "Watson's Indiranagar",
+      "bar_url": "https://g.page/watson-s-indiranagar",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "2nd floor, 777/I, 100 Feet Rd, HAL 2nd Stage, ",
+        "street_2": "",
+        "city": "Indiranagar, Bengaluru",
+        "state": "KA",
+        "postal_code": "560008",
+        "country": "IN"
+      },
+      "notes": "\u003cp\u003eRegistration link:\u0026nbsp;\u003ca href=\"https://insider.in/event/puzzled-pint-bangalore-june-2023/buy\"\u003ehttps://insider.in/event/puzzled-pint-bangalore-june-2023/buy\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "city": "Bay Area",
+      "locations": [
+        {
+          "city": "East Bay",
+          "bar": "Two Pitchers Brewing Company",
+          "bar_url": "https://www.twopitchers.com/",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "2344 Webster Street",
+            "street_2": "",
+            "city": "Oakland",
+            "state": "CA",
+            "postal_code": "94612",
+            "country": "US"
+          },
+          "notes": ""
+        },
+        {
+          "city": "San Francisco",
+          "notes": "\u003cp\u003eSan Francisco game control volunteers will be hosting Puzzled Pint at two San Francisco locations again this month from 6pm to 9pm. Come puzzle with us at either venue.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://www.thenappertandysf.com/\"\u003eThe Napper Tandy\u003c/a\u003e\u0026nbsp;at 3200 24th Street in the Mission District\u003c/p\u003e\u003cp\u003eEnjoy Irish pub food, drinks, and ambiance along with your puzzles at The Napper Tandy. Ample outdoor and indoor seating options.\u0026nbsp;Look for game control outside by the door to pick up a puzzle set.\u0026nbsp;\u003c/p\u003e\u003cp\u003eOR\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://blackhammerbrewing.com/pages/castro\"\u003eWillkommen\u003c/a\u003e\u0026nbsp;at 2198 Market Street\u0026nbsp;in Castro/Hayes Valley\u003c/p\u003e\u003cp\u003eSolve your puzzles with us over craft beers and German-American food at the Willkommen beer hall. Features both indoor and outdoor seating, though the outdoor table surface may be somewhat less conducive to puzzling. Consider bringing a good writing surface if you prefer the outdoor\u0026nbsp;option. Note that this location closes at 9pm, so we won\u0026#39;t be able to stay beyond that.\u003c/p\u003e"
+        },
+        {
+          "city": "Silicon Valley",
+          "notes": "\u003cp\u003eDepending on volunteer availability, we may or may not have a physical location this month. Please see our FB page for the latest updates. If you would like a puzzle packet emailed to you, you may email us at puzzledpintsv@gmail.com. Please note that packets will typically be mailed the night-of or day-after Puzzled Pint Tuesday. Thank you for understanding! If you would like to volunteer, please also reach out by messaging us on either FB or emailing puzzledpintsv@gmail.com. Happy solving, puzzler!\u003c/p\u003e"
+        }
+      ]
+    },
+    {
+      "city": "Bend",
+      "bar": "Silver Moon Brewing",
+      "bar_url": "https://www.silvermoonbrewing.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "24 NW Greenwood Ave",
+        "street_2": "",
+        "city": "Bend",
+        "state": "OR",
+        "postal_code": "97703",
+        "country": "US"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Berlin",
+      "bar": "Prater Biergarten",
+      "bar_url": "prater-biergarten.de",
+      "start_time": "07:30 pm",
+      "stop_time": "10:30 pm",
+      "address": {
+        "street_1": "Kastanienallee 7-9",
+        "street_2": "",
+        "city": "Berlin",
+        "state": null,
+        "postal_code": "10435",
+        "country": "DE"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Boston",
+      "bar": "Charlie's Kitchen",
+      "bar_url": "https://www.charlieskitchen.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "10 Eliot St",
+        "street_2": "",
+        "city": "Cambridge ",
+        "state": "MA",
+        "postal_code": "02138",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;re back at Charlie\u0026#39;s Kitchen this month! Please let us know if you plan to attend at\u0026nbsp;\u003ca href=\"https://pp-rsvp.com/24JBWK\"\u003ehttps://pp-rsvp.com/24JBWK\u003c/a\u003e by Monday if possible. Charlie\u0026#39;s Kitchen has some indoor and outdoor seating.\u003c/p\u003e"
+    },
+    {
+      "city": "Boulder",
+      "bar": "Murphy's Tap House (LOUISVILLE)",
+      "bar_url": "https://murphystaphouse.com/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "585 McCaslin Blvd",
+        "street_2": "",
+        "city": "Louisville",
+        "state": "CO",
+        "postal_code": "80027",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003ePLEASE NOTE: There are multiple\u0026nbsp;Murphy\u0026#39;s in Boulder County - we\u0026#39;re meeting at the one in Louisville!\u003c/p\u003e\u003cp\u003eJust talk to the host stand for a table, and come pick up puzzles from us at the host table.\u003c/p\u003e"
+    },
+    {
+      "city": "Brno",
+      "bar": "Pivovar Harry",
+      "bar_url": "https://harry.beer/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "Poštovská 3",
+        "street_2": "",
+        "city": "Brno",
+        "state": null,
+        "postal_code": "60000",
+        "country": "CZ"
+      },
+      "notes": "Write to Yeti (yeti@physics.muni.cz) if you plan to come. If you want a reservation, make one yourself. Thanks!"
+    },
+    {
+      "city": "Central NJ",
+      "bar": "Tavern on George",
+      "bar_url": "https://www.tavernongeorge.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "361 George St",
+        "street_2": "",
+        "city": "New Brunswick",
+        "state": "NJ",
+        "postal_code": "08901",
+        "country": "US"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Charlottesville",
+      "bar": "Brazos Tacos @ Barracks Road Shopping Center",
+      "bar_url": "store.brazostacos.com",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "1133 Emmet St. N",
+        "street_2": "",
+        "city": "Charlottesville",
+        "state": "VA",
+        "postal_code": "22903",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003e\u003cstrong\u003eBrazos Tacos @ Barracks Road Shopping Center!\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eNote that this is the \u003cstrong\u003eNEW\u003c/strong\u003e Brazos Tacos location (where the old Brixx Pizza used to be in the Barracks Road Shopping Center), \u003cstrong\u003eNOT\u003c/strong\u003e the Brazos location at the Ix Art Park!\u003c/p\u003e\u003cp\u003eThey have nice indoor and outdoor seating (including covered outdoor seating even if the weather isn\u0026#39;t perfect). Tacos and alcoholic and non-alcoholic drinks are now available.\u003c/p\u003e\u003cp\u003ePlease RSVP to puzzledpintcho@gmail.com if you will definitely or probably attend!\u003c/p\u003e"
+    },
+    {
+      "city": "Chicago",
+      "locations": [
+        {
+          "city": "City",
+          "bar": "Marz Community Brewing Co",
+          "bar_url": "marz.beer",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "3630 S Iron St",
+            "street_2": "",
+            "city": "Chicago",
+            "state": "IL",
+            "postal_code": "60609",
+            "country": "US"
+          },
+          "notes": ""
+        },
+        {
+          "city": "City North",
+          "bar": "The Reveler",
+          "bar_url": "https://revelerchicago.com/",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "3403 N Damen Ave",
+            "street_2": "",
+            "city": "Chicago",
+            "state": "IL",
+            "postal_code": "60625",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003eRSVP here for Reveler:\u0026nbsp;\u003ca href=\"https://pp-rsvp.com/ZLPWFM\"\u003ehttps://pp-rsvp.com/ZLPWFM\u003c/a\u003e\u003c/p\u003e"
+        }
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "bar": "Woodstock",
+      "bar_url": "https://www.woodstockaddington.co.nz/about-us",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "291 Lincoln Road",
+        "street_2": "",
+        "city": "Christchurch",
+        "state": "CAN",
+        "postal_code": "8024",
+        "country": "NZ"
+      },
+      "notes": "\u003cp\u003eWe have a new location this month, it\u0026#39;s Woodstock in Addington :)\u003c/p\u003e\u003cp\u003eAs usual, please book your table by filling in the form at the bottom of the page\u0026nbsp;\u003ca href=\"https://www.woodstockaddington.co.nz/about-us\"\u003ehttps://www.woodstockaddington.co.nz/about-us\u003c/a\u003e and specify you\u0026#39;re with Puzzled Pint so we can all seat in the same area :)\u003c/p\u003e\u003cp\u003eTuesday Special! They\u0026#39;re\u0026nbsp;running a 2 for 1 mains, so make sure to ask what\u0026#39;s included in the deal\u003c/p\u003e\u003cp\u003eSee you at the pub!\u003c/p\u003e"
+    },
+    {
+      "city": "Columbia, Maryland",
+      "bar": "Periodic Table",
+      "bar_url": "periodictablecolumbia.com",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "8808 Centre Park Dr",
+        "street_2": "",
+        "city": "Columbia, Maryland",
+        "state": "MD",
+        "postal_code": "21045",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eThematic location this month!\u003c/p\u003e\u003cp\u003eNo scissors or extra supplies needed.\u0026nbsp; Can\u0026#39;t wait to see you!\u003c/p\u003e"
+    },
+    {
+      "city": "Columbus",
+      "bar": "Crooked Can",
+      "bar_url": "https://crookedcanohio.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "5354 Center St",
+        "street_2": "",
+        "city": "Hilliard",
+        "state": "OH",
+        "postal_code": "43026",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eParking all over, but there\u0026#39;s a sizeable lot kitty-corner to the brewery off of Wayne street.\u003c/p\u003e"
+    },
+    {
+      "city": "Coventry",
+      "bar": "Broomfield Tavern",
+      "bar_url": "https://www.facebook.com/profile.php?id=100063539802031",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "14-16 Broomfield Place",
+        "street_2": "",
+        "city": "Coventry",
+        "state": "COV",
+        "postal_code": "CV5 6GY",
+        "country": "GB"
+      },
+      "notes": ""
+    },
+    {
+      "city": "DFW",
+      "locations": [
+        {
+          "city": "Dallas",
+          "bar": "Celestial Beerworks",
+          "bar_url": "https://www.celestialbeerworks.com/",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "2530 Butler St",
+            "street_2": "",
+            "city": "Dallas",
+            "state": "TX",
+            "postal_code": "75235",
+            "country": "US"
+          },
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "city": "Denver",
+      "bar": "Inga's Alpine Tavern",
+      "bar_url": "https://ingasalpinetavern.net/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "5151 Leetsdale Drive",
+        "street_2": "",
+        "city": "Denver",
+        "state": "CO",
+        "postal_code": "80246",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eSee you there!\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Detroit Metro",
+      "notes": "\u003cp\u003eSorry but we\u0026#39;re taking the month of June off.\u003c/p\u003e\u003cp\u003eIf you\u0026#39;re interested in being an organizer and helping us get through busy seasons like this in the future, send Celia an email at celia.cunningham@gmail.com\u003c/p\u003e\u003cp\u003eThanks!\u003c/p\u003e"
+    },
+    {
+      "city": "Edinburgh",
+      "bar": "McLarens on the Corner",
+      "bar_url": "https://mclarensonthecorner.co.uk/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "8 Morningside Road",
+        "street_2": "",
+        "city": "Edinburgh",
+        "state": "EDH",
+        "postal_code": "EH10 4DD",
+        "country": "GB"
+      },
+      "notes": "\u003cp\u003eAs always, please have one person from your group send a quick email to PuzzPintEdi@gmail.com to let us know you\u0026#39;re coming, so we can print enough puzzle sets for everyone.\u003c/p\u003e"
+    },
+    {
+      "city": "Galway City",
+      "bar": "BlueNoteGalway ",
+      "bar_url": "https://linktr.ee/BlueNoteGalway",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "3 William Street west",
+        "street_2": "Westend",
+        "city": "Galway City",
+        "state": "G",
+        "postal_code": "H91V184",
+        "country": "IE"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Houston",
+      "bar": "Saint Arnold Brewing Company",
+      "bar_url": "https://www.saintarnold.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "2000 Lyons Ave",
+        "street_2": "",
+        "city": "Houston",
+        "state": "TX",
+        "postal_code": "77020",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eTime to return to our unofficial headquarters!\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Humboldt County",
+      "bar": "Redwood Curtain, Eureka",
+      "bar_url": "https://www.redwoodcurtainbrewing.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "1595 Myrtle Ave., Suite B",
+        "street_2": "",
+        "city": "Eureka",
+        "state": "CA",
+        "postal_code": "95501",
+        "country": "US"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Huntsville",
+      "bar": "InnerSpace Brewing Company",
+      "bar_url": "https://innerspacebrewing.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "2414 Clinton Ave W",
+        "street_2": "",
+        "city": "Huntsville",
+        "state": "AL",
+        "postal_code": "35805",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe will be set up inside the main area. Looking forward to seeing everyone there!\u003cbr /\u003e\u003cbr /\u003eFor more info, visit us on Facebook:\u0026nbsp;\u003ca target=\"_blank\" href=\"https://www.facebook.com/PuzzPintHSV\"\u003ehttps://www.facebook.com/PuzzPintHSV\u003c/a\u003e\u0026nbsp;or Twitter:\u0026nbsp;\u003ca target=\"_blank\" href=\"https://twitter.com/PuzzPintHSV\"\u003ehttps://twitter.com/PuzzPintHSV\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "city": "Jersey City/Hoboken",
+      "bar": "Grace O'Malley's ",
+      "bar_url": "",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "140 Newark Ave",
+        "street_2": "",
+        "city": "Jersey City",
+        "state": "NJ",
+        "postal_code": "07302",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;re back in Jersey City for our next round! Come stop by Grace O\u0026#39;Malleys for a nice round of puzzles and a beer (or two)! We\u0026#39;ll be there 7 - 10 handing out puzzles.\u003c/p\u003e\u003cp\u003eCheck us out as well on instagram to stay up to date on events-\u0026nbsp; @PUZZLEDPINTHUDSONCOUNTY\u003c/p\u003e"
+    },
+    {
+      "city": "Kansas City",
+      "bar": "Strang Hall",
+      "bar_url": "https://www.stranghall.com/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "7313 W 80th St",
+        "street_2": "",
+        "city": "Overland Park",
+        "state": "KS",
+        "postal_code": "66204",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eCory and I did a bad job coming up with a location so we are doing Strang Hall again.\u0026nbsp; We\u0026#39;ll probably sit near the bar otherwise I\u0026#39;ll post something on our FB page (https://www.facebook.com/puzzledpintkc)\u003c/p\u003e"
+    },
+    {
+      "city": "Kitchener-Waterloo",
+      "bar": "Whale and Ale",
+      "bar_url": "https://www.whaleandale.ca/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "1120 Victoria Street North",
+        "street_2": "",
+        "city": "Kitchener",
+        "state": "ON",
+        "postal_code": "",
+        "country": "CA"
+      },
+      "notes": "\u003cp\u003eRSVP to\u0026nbsp;\u003ca href=\"mailto:travisandhanna@gmail.com?subject=PP%20RSVP\"\u003etravisandhanna@gmail.com\u003c/a\u003e\u0026nbsp;by Monday night so we can give an update to the bar and know how many sets to print!\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Leeds",
+      "bar": "White Swan (Next to City Varieties)",
+      "bar_url": "https://whiteswanleeds.co.uk/",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "Swan Street",
+        "street_2": "",
+        "city": "Leeds",
+        "state": "LDS",
+        "postal_code": "LS1 6LG",
+        "country": "GB"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;re excited\u0026nbsp;to return to in-person puzzling after a couple of years of covid related online activities.\u003c/p\u003e\u003cp\u003eCome and join us!\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "London",
+      "notes": "\u003cp\u003eAt the moment\u0026nbsp;Puzzled Pint London is still running remotely.\u0026nbsp;You\u0026#39;re encouraged to join your friends in a video call and solve Puzzled Pint together.\u003c/p\u003e\u003cp\u003eWe\u0026#39;ll be running the event through our online tool at\u0026nbsp;\u003ca href=\"https://puzzledpint.live/\"\u003ehttps://puzzledpint.live/\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can download the puzzles and check your answers from 7pm on Tuesday\u003c/p\u003e\u003cp\u003eGC will be available to help on request too\u003c/p\u003e"
+    },
+    {
+      "city": "Los Angeles",
+      "locations": [
+        {
+          "city": "Inland Empire",
+          "bar": "Strum Brewing Company",
+          "bar_url": "https://strumbrewing.com",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "315 N Euclid Ave",
+            "street_2": "",
+            "city": "Ontario",
+            "state": "CA",
+            "postal_code": "91762",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003eNo food/food truck onsite, bring something in! Let me know if you\u0026#39;re coming, message fb.me/PuzzledPintIE\u003c/p\u003e"
+        },
+        {
+          "city": "Northeast",
+          "bar": "Brews Brothers - Burbank Brewpub",
+          "bar_url": "https://www.brewsbrotherscraftbeer.com/",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "3000 W Olive Ave",
+            "street_2": "",
+            "city": "Burbank",
+            "state": "CA",
+            "postal_code": "91505",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003ePlenty of parking in the lot. Look for Jake and Steph to get your puzzle pack :) Don\u0026#39;t forget a pencil!\u0026nbsp;\u003c/p\u003e"
+        },
+        {
+          "city": "Santa Monica",
+          "bar": "Sonny McLean's",
+          "bar_url": "https://www.sonnymcleans.com/",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "2615 Wilshire Boulevard",
+            "street_2": "",
+            "city": "Santa Monica",
+            "state": "CA",
+            "postal_code": "90403",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003eWe\u0026#39;re at Sonny McLean\u0026#39;s this month from 6-9! They\u0026#39;ve got traditional Irish favorites alongside bar food like pizzas and chili, all the way up to\u0026nbsp;banh mi and Nashville chicken! Oh, and they\u0026#39;ve also got beer too, this is a pub after all.\u003c/p\u003e\u003cp\u003eYou won\u0026#39;t want to miss this set; it\u0026#39;s a good one. See you soon!\u003c/p\u003e"
+        }
+      ]
+    },
+    {
+      "city": "Madison",
+      "bar": "Vintage Brewing Co. Capitol East",
+      "bar_url": "https://vintagebrewingcompany.com/capitoleast/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "803 East Washington Ave.",
+        "street_2": "",
+        "city": "Madison",
+        "state": "WI",
+        "postal_code": "53703",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eRSVPs are optional but appreciated: if you RSVP for your team at\u0026nbsp;\u003ca href=\"https://gc.madisonpuzzles.com/\"\u003egc.madisonpuzzles.com\u003c/a\u003e\u0026nbsp;by Tuesday morning, we will be sure to set aside a puzzle set for you. (We will also bring\u0026nbsp;extra sets, so please come even if you haven\u0026#39;t RSVP\u0026#39;d!)\u003c/p\u003e"
+    },
+    {
+      "city": "Manchester",
+      "bar": "Horse and Jockey",
+      "bar_url": "https://www.joseph-holt.com/pubs/horse-and-jockey",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "9 The Green",
+        "street_2": "Chorlton",
+        "city": "Manchester",
+        "state": "MAN",
+        "postal_code": "M21 9HS",
+        "country": "GB"
+      },
+      "notes": "\u003cp\u003eCome one, come all, we\u0026#39;re back at the Horse \u0026amp; Jockey in Chorlton!\u003c/p\u003e\u003cp\u003eAs usual, if you\u0026#39;re coming as a team, you can start any time from 7:00. If you\u0026#39;re coming alone then please arrive by 7:30 and we will find you a team to join.\u003c/p\u003e\u003cp\u003eHappy puzzling!\u003c/p\u003e"
+    },
+    {
+      "city": "Melbourne",
+      "bar": "The Black Prince",
+      "bar_url": "https://theblackprincepubandgrill.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "45 Bourke St",
+        "street_2": "",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postal_code": "3000",
+        "country": "AU"
+      },
+      "notes": "\u003cp\u003eWe are at The Black Prince this month! We will be seated up the back.\u003c/p\u003e\u003cp\u003ePlease RSVP so we know how many puzzle sets to print:\u0026nbsp;\u003cstrong\u003e\u003ca href=\"https://pp-rsvp.com/index.php?c=SGYA99\"\u003ehttps://pp-rsvp.com/index.php?c=SGYA99\u003c/a\u003e\u003c/strong\u003e\u003c/p\u003e\u003cp\u003ePlease give us some feedback on our past venues, we\u0026#39;ll put the favourites into higher rotation:\u0026nbsp;\u003ca href=\"https://forms.gle/JVYWBTDQZxtSpN5B8\"\u003ehttps://forms.gle/JVYWBTDQZxtSpN5B8\u003c/a\u003e\u003c/p\u003e\u003cp\u003eNeed help\u0026nbsp;remembering Puzzled Pint each month? \u003ca href=\"https://calendar.google.com/calendar/u/0/r/eventedit?location=http://www.puzzledpint.com\u0026amp;details=Puzzled+Pint+is+on+the+2nd+Tuesday+of+the+month.+To+find+out+where+it+is,+you+solve+the+location+puzzle,+which+comes+out+the+Friday+before+the+event.%0A%0A\u0026lt;b\u0026gt;NB:+Add+a+notification+for+4+days+before+this+calendar+event\u0026lt;%2Fb\u0026gt;,+as+a+reminder+for+the+location+puzzle.%0A%0ATo+access+the+location+puzzle,+see:+\u0026lt;b\u0026gt;\u0026lt;a+href=https://www.puzzledpint.com\u0026gt;www.puzzledpint.com\u0026lt;%2F/a\u0026gt;\u0026lt;%2Fb\u0026gt;\u0026amp;text=Puzzled+Pint\u0026amp;dates=20230613T180000/20230613T210000\u0026amp;recur=RRULE:FREQ=MONTHLY;BYDAY=2TU\"\u003eClick here to add a recurring event to your Google calendar\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "city": "Missoula",
+      "bar": "Imagine Nation Brewing",
+      "bar_url": "imaginenationbrewing.com",
+      "start_time": "05:00 pm",
+      "stop_time": "08:00 pm",
+      "address": {
+        "street_1": "1151 W Broadway St",
+        "street_2": "",
+        "city": "Missoula",
+        "state": "MT",
+        "postal_code": "59802",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;ll see you from 5 - 8 pm!\u003c/p\u003e"
+    },
+    {
+      "city": "Montreal",
+      "bar": "HELM",
+      "bar_url": "https://www.helmmicrobrasserie.ca/#menu",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "273 Rue Bernard O",
+        "street_2": "",
+        "city": "Montreal",
+        "state": "QC",
+        "postal_code": "H2V 1T5",
+        "country": "CA"
+      },
+      "notes": "\u003cp\u003e\u003cstrong\u003ePlease RSVP here\u003c/strong\u003e if you can: \u003ca href=\"http://www.facebook.com/events/1690785981372830\"\u003ehttps://www.facebook.com/events/1690785981372830\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "city": "Munich",
+      "bar": "Augustiner-Keller (Biergarten)",
+      "bar_url": "https://www.augustinerkeller.de/de/Biergarten",
+      "start_time": "07:30 pm",
+      "stop_time": "10:30 pm",
+      "address": {
+        "street_1": "Arnulfstraße 52",
+        "street_2": "",
+        "city": "Munich",
+        "state": null,
+        "postal_code": "80335",
+        "country": "DE"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Nashville",
+      "bar": "Double Dogs Hillsboro Village",
+      "bar_url": "https://doubledogs.biz/hillsboro-village/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "1807 21st Avenue South",
+        "street_2": "",
+        "city": "Nashville",
+        "state": "TN",
+        "postal_code": "37212",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe are back in a bar.\u0026nbsp;\u0026nbsp;Come visit, and RSVP to be sure you get a puzzle set. RSVP at\u0026nbsp;https://forms.gle/13xrcZR3EUDQNGiD9\u003c/p\u003e\u003cp\u003eLook for the Puzzled Pint logo on the table near the door.\u003c/p\u003e"
+    },
+    {
+      "city": "New York City",
+      "bar": "Stout Bryant Park AND MSG",
+      "bar_url": "https://www.stoutnyc.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "109 W 39th St",
+        "street_2": "",
+        "city": "New York City",
+        "state": "NY",
+        "postal_code": "10018",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eHello all - we are splitting up into\u0026nbsp;\u003cstrong\u003eTWO LOCATIONS\u003c/strong\u003e\u0026nbsp;this month - \u003cstrong\u003eStout Bryant Park\u003c/strong\u003e (The Mezzanine upstairs) and \u003cstrong\u003eStout MSG\u003c/strong\u003e (The Greene Room at the back of the ground floor). Bryant Park has room for about 70ish people, MSG has room for about 50ish people so plan accordingly!\u003c/p\u003e\u003cp\u003eWe will have a couple GC people at each location, and we hope it works out well, but let us know how it goes for you all too! Because we have to divvy up the materials, we may be starting a bit later, closer to 6:15pm, but feel free to grab a table early.\u003c/p\u003e"
+    },
+    {
+      "city": "Norwich",
+      "bar": "The Cottage NR3",
+      "bar_url": "https://www.norwichcottage.com/",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "9 Silver Road",
+        "street_2": "",
+        "city": "Norwich",
+        "state": "NFK",
+        "postal_code": "NR3 4TB",
+        "country": "GB"
+      },
+      "notes": "\u003cp\u003eCall the pub on \u0026nbsp;01603 464461 if you want to book a table.\u003c/p\u003e"
+    },
+    {
+      "city": "Orange County",
+      "bar": "Brewheim",
+      "bar_url": "https://www.brewheim.com",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "1931 E Wright Cir",
+        "street_2": "",
+        "city": "Anaheim",
+        "state": "CA",
+        "postal_code": "92806",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eThis month we\u0026#39;re meeting at Brewheim for the first time, at our normal time of \u003cstrong\u003e7:00 p.m.\u003c/strong\u003e\u003c/p\u003e\u003cp\u003ePlease RSVP here so we know how many sets to bring:\u003cbr /\u003e\u003ca href=\"https://pp-rsvp.com/MZDHGU\"\u003ehttps://pp-rsvp.com/MZDHGU\u003c/a\u003e\u003c/p\u003e\u003cp\u003eSee you soon!\u003c/p\u003e"
+    },
+    {
+      "city": "Ottawa",
+      "bar": "Braumeister Bierhalle",
+      "bar_url": "http://www.braumeister.ca",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "175 Carruthers Avenue ",
+        "street_2": "",
+        "city": "Ottawa",
+        "state": "ON",
+        "postal_code": "",
+        "country": "CA"
+      },
+      "notes": "\u003cp\u003eNew spot this month! It\u0026#39;s close to the LRT and has plenty of street parking at night.\u0026nbsp;\u003c/p\u003e\u003cp\u003ePlease let us know you\u0026#39;re coming by getting free tickets on\u0026nbsp;\u003ca href=\"https://www.eventbrite.ca/e/puzzled-pint-ottawa-gatineau-chapter-tickets-203276675007\"\u003eeventbrite\u003c/a\u003e\u0026nbsp;\u0026nbsp;- it helps us know how many puzzles to print!\u003c/p\u003e\u003cp\u003eKevin and Steph\u003c/p\u003e"
+    },
+    {
+      "city": "Oxford",
+      "bar": "The Oxford Retreat",
+      "bar_url": "https://www.theoxfordretreat.com/",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "1-2 Hythe Bridge Street",
+        "street_2": "",
+        "city": "Oxford",
+        "state": null,
+        "postal_code": "OX1 2EW",
+        "country": "GB"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Paducah",
+      "bar": "Jasmine Thai Cuisine and Sushi Bar",
+      "bar_url": "https://www.cravejasmine.com/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "451 Jordan Dr Suite K",
+        "street_2": "",
+        "city": "Paducah",
+        "state": "KY",
+        "postal_code": "",
+        "country": "US"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Philadelphia ",
+      "bar": "Cavanaugh's Headhouse Square",
+      "bar_url": "https://www.cavsheadhouse.com/",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "421 S. 2nd Street",
+        "street_2": "",
+        "city": "Philadelphia ",
+        "state": "PA",
+        "postal_code": "19147",
+        "country": "US"
+      },
+      "notes": "We will be in the Main Dining Room (on the 2nd floor).  There are also outdoor tables (on the mezzanine) if you want to be outside (and the weather is cooperative)."
+    },
+    {
+      "city": "Phoenix",
+      "bar": "The Porch",
+      "bar_url": "https://porchrestaurants.com/arcadia/",
+      "start_time": "05:45 pm",
+      "stop_time": "08:45 pm",
+      "address": {
+        "street_1": "4017 E Indian School Rd",
+        "street_2": "",
+        "city": "Phoenix",
+        "state": "AZ",
+        "postal_code": "85018",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eBring your favorite puzzle solving tools and toys (pencil, eraser, scissors, straight-edge, or whatever).\u003c/p\u003e\u003cp\u003eTrying a another new place!\u0026nbsp; Indoor and outdoor tables.\u0026nbsp; Decent parking, and no known trivia group there on same night!\u003c/p\u003e\u003cp\u003eIf not raining, look for Mark on the patio.\u0026nbsp; Come join us!\u0026nbsp; (Happy Hour until 6:15.)\u003c/p\u003e"
+    },
+    {
+      "city": "Pittsburgh",
+      "bar": "East End Brewing Company",
+      "bar_url": "https://www.eastendbrewing.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "147 Julius St",
+        "street_2": "",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "postal_code": "15206",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;re back at East End this month, hopefully the weather will hold up and we can enjoy the outdoor space! They\u0026#39;ve got pizza and other similar food available, as well as of course their own brewed beers.\u003c/p\u003e"
+    },
+    {
+      "city": "Portland, Maine",
+      "bar": "Liquid Riot",
+      "bar_url": "https://liquidriot.com/",
+      "start_time": "05:00 pm",
+      "stop_time": "08:00 pm",
+      "address": {
+        "street_1": "250 Commercial St",
+        "street_2": "",
+        "city": "Portland, Maine",
+        "state": "ME",
+        "postal_code": "04101",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eNote the earlier start! They close at 8pm.\u003c/p\u003e"
+    },
+    {
+      "city": "Portland, Oregon",
+      "bar": "The Zipper / Paydirt",
+      "bar_url": "https://www.paydirtbar.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "2705 NE Sandy Blvd",
+        "street_2": "",
+        "city": "Portland, Oregon",
+        "state": "OR",
+        "postal_code": "97232",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eLooks for us in the common area at the Zipper. (URL is for the bar, but we\u0026#39;ll be in the main area.)\u003c/p\u003e"
+    },
+    {
+      "city": "Prague",
+      "bar": "U Slovanské lípy",
+      "bar_url": "https://uslovanskelipy.cz/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "Tachovské nám. 288/6, 130 00 Praha 3-Žižkov",
+        "street_2": "Praha 3",
+        "city": "Prague",
+        "state": "PR",
+        "postal_code": "13000",
+        "country": "CZ"
+      },
+      "notes": "\u003cp\u003eThe pub does \u003cstrong\u003enot accept\u003c/strong\u003e \u003cstrong\u003epayment cards\u003c/strong\u003e.\u003c/p\u003e\u003cp\u003ePlease fill the RSVP form at\u0026nbsp;https://puzzledpint.sifrovacky.cz/praha.html\u0026nbsp;\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Raleigh-Durham",
+      "bar": "Rosecomb Beer Garden",
+      "bar_url": "https://rosecombbeergarden.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "1143 Parkside Main St.",
+        "street_2": "",
+        "city": "Cary",
+        "state": "NC",
+        "postal_code": "27519",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eJoin us at Rosecomb\u0026nbsp;Beer Garden for the June edition of Puzzled Pint in Raleigh-Durham!\u003c/p\u003e\u003cp\u003eRosecomb newly opened in Cary and has a variety of local drinks, as well as both indoor and outdoor seating. There are multiple food options next door as well (BB\u0026#39;s fried chicken, Five Guys, sushi, etc.)\u003c/p\u003e\u003cp\u003eIf you plan on attending, consider marking yourself as \u0026quot;going\u0026quot; on our \u003ca href=\"https://www.facebook.com/events/3482147605438959/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22your_upcoming_events_unit%22%2C%22surface%22%3A%22bookmark%22%7D]%2C%22ref_notif_type%22%3Anull%7D\"\u003eFacebook event\u003c/a\u003e - it helps us know how many puzzle sets to print!\u003c/p\u003e"
+    },
+    {
+      "city": "Sacramento",
+      "bar": "Kupros Craft House",
+      "bar_url": "https://www.kuproscrafthouse.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "1217 21st Street",
+        "street_2": "",
+        "city": "Sacramento",
+        "state": "CA",
+        "postal_code": "95811",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;ll be upstairs.\u003c/p\u003e"
+    },
+    {
+      "city": "Seattle",
+      "locations": [
+        {
+          "city": "City Blue",
+          "bar": "Optimism",
+          "bar_url": "https://optimismbrewing.com",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "1158 Broadway",
+            "street_2": "",
+            "city": "Seattle",
+            "state": "WA",
+            "postal_code": "",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003ePlease RSVP once per team:\u0026nbsp;\u003ca href=\"https://www.eventbrite.com/e/puzzled-pint-seattle-june-2023-tickets-653726542687?aff=oddtdtcreator\"\u003ehttps://www.eventbrite.com/e/puzzled-pint-seattle-june-2023-tickets-653726542687\u003c/a\u003e\u003c/p\u003e"
+        },
+        {
+          "city": "City Green",
+          "bar": "Old Stove - Ship Canal",
+          "bar_url": "https://www.oldstove.com/shipcanal",
+          "start_time": "06:00 pm",
+          "stop_time": "09:00 pm",
+          "address": {
+            "street_1": "600 W Nickerson St",
+            "street_2": "",
+            "city": "Seattle",
+            "state": "WA",
+            "postal_code": "98119",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003eOld Stove Ship Canal has lots of outdoor space, and Paparepas foodtruck will be there! (\u003ca target=\"_blank\" href=\"https://www.paparepas.com/\"\u003ehttps://www.paparepas.com/\u003c/a\u003e).\u003c/p\u003e\u003cp\u003eThey have a hard close at 9PM.\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e\u003cp\u003ePlease RSVP once per team:\u0026nbsp;\u003ca href=\"https://www.eventbrite.com/e/puzzled-pint-seattle-june-2023-tickets-653726542687?aff=oddtdtcreator\"\u003ehttps://www.eventbrite.com/e/puzzled-pint-seattle-june-2023-tickets-653726542687\u003c/a\u003e\u003c/p\u003e"
+        }
+      ]
+    },
+    {
+      "city": "St. Louis",
+      "bar": "Humphrey's",
+      "bar_url": "https://www.facebook.com/people/Humphreys-Midtown",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "3700 Laclede Ave.",
+        "street_2": "",
+        "city": "St. Louis",
+        "state": "MO",
+        "postal_code": "63108",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eHumphrey\u0026#39;s is giving one free pitcher of Busch Light to all puzzling groups that order food (must be 21). \u0026nbsp;That\u0026#39;s 60 fluid ounces, 3.75 pints, or 7.5 cups, depending on your system of measurement. \u0026nbsp;Come thirsty!\u0026nbsp; Bryan C and Michael G (the original STL organizers) will be hosting this month!\u0026nbsp;\u0026nbsp;Also please RSVP (just one per team) to either \u003cstrong\u003er_becker@sbcglobal.net\u003c/strong\u003e - subject line: We\u0026#39;re coming to Puzzled Pint\u0026quot; or to the monthly\u003cstrong\u003e \u003ca href=\"https://fb.me/e/URDYes7U\"\u003eFB event\u003c/a\u003e\u003c/strong\u003e:\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Sydney",
+      "bar": "THE SPORTING GLOBE BAR \u0026 GRILL",
+      "bar_url": "https://www.sportingglobe.com.au/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "King Street Wharf",
+        "street_2": "22 The Promenade",
+        "city": "Sydney",
+        "state": "NSW",
+        "postal_code": "2000",
+        "country": "AU"
+      },
+      "notes": "\u003cp\u003eAs you enter the venue walk straight ahead and down the stairs, we have reserved the whole room at the very back of the venue all for us!\u003c/p\u003e\u003cp\u003ePlease bring your own stationery if possible, however we will have things to lend out!\u003c/p\u003e\u003cp\u003ePlease like and share \u003ca href=\"https://www.facebook.com/PuzzledPintSydney/\"\u003eour facebook page\u003c/a\u003e\u0026nbsp;and please leave us a review!\u003c/p\u003e\u003cp\u003e\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Syracuse",
+      "bar": "Talking Cursive Brewing Co.",
+      "bar_url": "https://www.talkingcursive.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "301 Erie Blvd. W.",
+        "street_2": "",
+        "city": "Syracuse",
+        "state": "NY",
+        "postal_code": "13202",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eLook for the Puzzled Pint table tent to pick up puzzles for your team - Game Control will be available with puzzles and hints from 6-9PM!\u0026nbsp;\u003c/p\u003e\u003cp\u003eTalking\u0026nbsp;Cursive would like to reserve space for us, so please either call the taproom at (315) 907-6060 or reach out to Alexis via email at acolton@talkingcursive.com to reserve a table for your team, and just mention you are with Puzzled Pint.\u003c/p\u003e"
+    },
+    {
+      "city": "Tacoma",
+      "bar": "Locust Cider",
+      "bar_url": "www.locustcider.com",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "2805 6th Ave",
+        "street_2": "",
+        "city": "Tacoma",
+        "state": "WA",
+        "postal_code": "98406",
+        "country": "US"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Toronto",
+      "bar": "The Bishop and Belcher",
+      "bar_url": "https://www.bishopandbelcher.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "175 Bloor St E",
+        "street_2": "",
+        "city": "Toronto",
+        "state": "ON",
+        "postal_code": "",
+        "country": "CA"
+      },
+      "notes": "\u003cp\u003eLooking forward to seeing everyone this Tuesday, June 13, 2023.\u003c/p\u003e\u003cp\u003eWe will be set up at our GC table to help with the puzzles from 6:00 - 9:00 PM\u003c/p\u003e\u003cp\u003ePlease join us in the \u003ca href=\"https://discord.gg/qnAKjpD\"\u003eDiscord \u003c/a\u003ebetween events for other puzzle-related fun!\u003c/p\u003e\u003cp\u003ePuzzled Pint Toronto is currently overseen\u0026nbsp;by: Michaela and Stu at the GC table and Andria for venue booking and social media\u003c/p\u003e"
+    },
+    {
+      "city": "Tromsø",
+      "bar": "Agenturet",
+      "bar_url": "https://www.agentur1.no/",
+      "start_time": "06:30 pm",
+      "stop_time": "09:30 pm",
+      "address": {
+        "street_1": "Sjøgata 12",
+        "street_2": "",
+        "city": "Tromsø",
+        "state": null,
+        "postal_code": "9008",
+        "country": "NO"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Tulsa",
+      "bar": "The Starlite Bar",
+      "bar_url": "https://thestarlitebar.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "1902 East 11th Street",
+        "street_2": "",
+        "city": "Tulsa",
+        "state": "OK",
+        "postal_code": "74104",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eWe\u0026#39;ll be at Starlite from 6:00-9:00. Look for the Puzzled Pint table topper.\u0026nbsp;This location has a full bar, cocktails, and\u0026nbsp;snack foods in a vending machine. They allow outside food but no outside drinks. We can\u0026#39;t wait to see you there! -Cassie and Alex\u003c/p\u003e\u003cp\u003ePlease keep an eye on\u0026nbsp;\u003ca href=\"https://www.facebook.com/PuzzPintTulsa\"\u003ehttps://www.facebook.com/PuzzPintTulsa\u003c/a\u003e\u0026nbsp;for a survey about future Puzzled Pint locations.\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Twin Cities",
+      "bar": "Sociable Cider Werks",
+      "bar_url": "https://sociablecider.com/",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "1500 Fillmore St NE",
+        "street_2": "",
+        "city": "Minneapolis",
+        "state": "MN",
+        "postal_code": "55413",
+        "country": "US"
+      },
+      "notes": "\u003cp\u003eThis month we\u0026#39;ll be at Sociable Cider Werks in Northeast Minneapolis. 🍏🍎 They have a huge outdoor patio area and good dogs are welcome. They have a resident food truck to keep us fed:\u0026nbsp;\u0026nbsp;\u003ca target=\"_blank\" href=\"https://sociablecider.com/unidos\"\u003eUnidos Food Co.\u003c/a\u003e\u0026nbsp;They will be having a musical Artist Showcase at the same time, at the other end of the outdoor space. Our head table will be located near the giant \u0026quot;Sociable\u0026quot; sign wall.\u0026nbsp;\u003c/p\u003e\u003cp\u003eTheir parking lot is large and free and bike-friendly. Sociable is close to the 10 N/U bus and a little further from the 4B.\u003c/p\u003e\u003cp\u003ePlease RSVP by Monday at midnight🌙 so we print enough packets for everyone! \u0026gt;\u0026gt;\u0026nbsp;\u003ca href=\"https://pp-rsvp.com/25H4FN\"\u003ehttps://pp-rsvp.com/25H4FN\u003c/a\u003e\u0026nbsp;\u0026lt;\u0026lt;\u0026nbsp;😀\u0026nbsp;\u003c/p\u003e"
+    },
+    {
+      "city": "Valencia",
+      "bar": "El Garaje Foodie",
+      "bar_url": "https://elgarajefoodie.com/",
+      "start_time": "08:00 pm",
+      "stop_time": "11:00 pm",
+      "address": {
+        "street_1": "Carrer del Dr. Ferran, 10",
+        "street_2": "",
+        "city": "Valencia",
+        "state": "V",
+        "postal_code": "46021",
+        "country": "ES"
+      },
+      "notes": "\u003cp\u003eJoin the group on Telegram to stay up to date:\u0026nbsp;https://t.me/puzzledpintvlc\u0026nbsp;\u003c/p\u003e\u003cp\u003eArrive by 2030 if you want to be placed in a team or arrive at any time before 2130 if you have your own team. We will be there until midnight. The puzzles usually take our teams around 2 hours to complete. Not a problem to come alone, you can complete the puzzles solo or we can help you find a team if you would like one. Ask for the Puzzled Pint and/or the Board Games group. We will occupy both \u0026#39;sides\u0026#39; of the bar.\u003c/p\u003e"
+    },
+    {
+      "city": "Victoria",
+      "bar": "The Moon Under Water",
+      "bar_url": "https://www.moonunderwater.ca/home",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "350B BAY ST",
+        "street_2": "",
+        "city": "Victoria",
+        "state": "BC",
+        "postal_code": "V8T 1P7",
+        "country": "CA"
+      },
+      "notes": "\u003cp\u003eThe Moon Under Water loves us when can tell them a headcount, if possiblle, please RSVP\u0026nbsp;per team to chris@enigmaticevents.com.\u0026nbsp; Also please email us if you\u0026#39;d like to be\u0026nbsp; on to our reminder email list.\u003cbr /\u003e\u003cbr /\u003eWe will have one side of the bar reserved for us until about 7.15.\u0026nbsp; Look for the Yellow table sign for the puzzle packs!\u003c/p\u003e"
+    },
+    {
+      "city": "Washington",
+      "locations": [
+        {
+          "city": "Arlington/City",
+          "bar": "Spider Kelly's",
+          "bar_url": "http://www.spiderkellys.com/",
+          "start_time": "07:00 pm",
+          "stop_time": "10:00 pm",
+          "address": {
+            "street_1": "3181 Wilson Boulevard",
+            "street_2": "",
+            "city": "Arlington",
+            "state": "VA",
+            "postal_code": "22201",
+            "country": "US"
+          },
+          "notes": "\u003cp\u003eWashington DC-City/Arlington will be back once again at Spider Kelly\u0026#39;s in Clarendon. If you are planning to attend, please RSVP to\u0026nbsp;\u003ca href=\"mailto:puzzledpintdc@gmail.com\"\u003epuzzledpintdc@gmail.com\u003c/a\u003e\u0026nbsp;so we know how many teams to expect and sets to print.\u003c/p\u003e"
+        }
+      ]
+    },
+    {
+      "city": "Wellington",
+      "bar": "Duke of Wellington",
+      "bar_url": "https://dukeofwellington.co.nz/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "29 Waterloo Quay",
+        "street_2": "",
+        "city": "Wellington",
+        "state": "WGN",
+        "postal_code": "6011",
+        "country": "NZ"
+      },
+      "notes": "\u003cp\u003eHello Puzzlers! This month we are back at Duke of Wellington.\u0026nbsp;\u003cbr /\u003ePlease make sure someone from your group has RSVP\u0026#39;d\u0026nbsp;here -\u003ca href=\"https://pp-rsvp.com/5EDZ5N\"\u003e\u0026nbsp;https://pp-rsvp.com/5EDZ5N\u003c/a\u003e\u003cbr /\u003eNo special stationery required this month.\u003cbr /\u003eSee you Tuesday!\u003c/p\u003e"
+    },
+    {
+      "city": "Windsor",
+      "bar": "The Goat Tap \u0026 Eatery",
+      "bar_url": "https://thegoattapandeatery.com/",
+      "start_time": "06:00 pm",
+      "stop_time": "09:00 pm",
+      "address": {
+        "street_1": "5841 Malden Rd",
+        "street_2": "",
+        "city": "Windsor",
+        "state": "ON",
+        "postal_code": "N9H 1S3",
+        "country": "CA"
+      },
+      "notes": ""
+    },
+    {
+      "city": "Zurich",
+      "bar": "The Alehouse – Palmhof",
+      "bar_url": "https://www.alehouse.ch/",
+      "start_time": "07:00 pm",
+      "stop_time": "10:00 pm",
+      "address": {
+        "street_1": "Universitätstrasse 23",
+        "street_2": "",
+        "city": "Zurich",
+        "state": null,
+        "postal_code": "8006",
+        "country": "CH"
+      },
+      "notes": "\u003cp\u003eThis month we\u0026#39;re at \u003ca href=\"https://www.alehouse.ch/\"\u003eThe Alehouse \u0026ndash; Palmhof\u003c/a\u003e just up the road from ETH Zentrum (nearest tram stop is ETH/Universit\u0026auml;tsspital or Haldenbach). Weather permitting you can find us on the terrace, if not then we\u0026#39;ll be inside. See you there!\u003c/p\u003e"
+    }
+  ]
+}
