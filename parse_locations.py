@@ -7,12 +7,11 @@ import logging
 import os
 import pickle
 import re
+import sys
 
 import requests
 from geopy.geocoders import GoogleV3, Nominatim
-from dotenv import load_dotenv
-
-load_dotenv()
+from geocode import geocode_address
 
 KNOWN_ADDRESSES_FILE = "known_addresses.pkl"
 
@@ -32,13 +31,11 @@ def get_location(address, known_addresses):
         logging.debug("Using cached address")
         location = known_addresses[full_address]
     else:
-        # locator = Nominatim(user_agent="puzzled-pint-map")
-        locator = GoogleV3(api_key=os.environ["GOOGLE_API_KEY"])
-        location = locator.geocode(full_address)
+        location = geocode_address(full_address)
         if not location:
             logging.warning(f"Could not geocode {full_address}")
             logging.warning(f"Geocoding the city instead.")
-            location = locator.geocode(address["city"])
+            location = geocode_address(address["city"])
             logging.debug(location)
         logging.info(f"Found location: {location}")
         known_addresses[full_address] = location
@@ -119,4 +116,8 @@ def get_locations(event_id):
 
 
 if __name__ == "__main__":
-    get_locations(190)
+    if len(sys.argv) != 2:
+        print("Usage: python parse_locations.py <event_id>")
+        sys.exit()
+    event_id = sys.argv[1]
+    get_locations(event_id)

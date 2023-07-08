@@ -16,7 +16,52 @@ const eventIds = {
   "July 2023": 190,
 };
 
+const CITY_COLORS = {
+  active: "#00FF00",
+  defunct: "#FF0000",
+};
+
 layerControl = L.control.layers([], [], { collapsed: false }).addTo(map);
+
+fetch("./data/cities.json")
+  .then((response) => response.json())
+  .then((cities) => {
+    var geojson = { type: "FeatureCollection", features: [] };
+    cities.forEach((city) => {
+      geojson.features.push({
+        type: "Feature",
+        properties: city,
+        geometry: {
+          type: "Point",
+          coordinates: [city.coordinates.longitude, city.coordinates.latitude],
+        },
+        style: {
+          color: CITY_COLORS[city.status],
+        },
+      });
+    });
+    console.log(geojson);
+
+    var geojsonLayer = new L.GeoJSON(geojson, {
+      pointToLayer: function (feature, latlng) {
+        // Using circles because markers are harder to re-color
+        return L.circleMarker(latlng, {
+          radius: 5,
+          fillColor: feature.style.color,
+          fillOpacity: 0.5,
+          color: "#000",
+          weight: 1,
+        });
+      },
+      onEachFeature: function (feature, layer) {
+        const properties = feature.properties;
+        let popup = `<h3><a href="${properties.url}">${properties.name}</a></h3>`;
+        layer.bindPopup(popup);
+      },
+    });
+    geojsonLayer.addTo(map);
+    layerControl.addOverlay(geojsonLayer, "Cities");
+  });
 
 Object.keys(eventIds).forEach((key) => {
   eventId = eventIds[key];
@@ -64,7 +109,7 @@ Object.keys(eventIds).forEach((key) => {
           layer.bindPopup(popup);
         },
       });
-      geojsonLayer.addTo(map);
+      // geojsonLayer.addTo(map);
       layerControl.addOverlay(geojsonLayer, key);
     });
 });
