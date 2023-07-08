@@ -7,10 +7,12 @@ import logging
 import os
 import pickle
 import re
+import shutil
 import sys
 
 import requests
 from geopy.geocoders import GoogleV3, Nominatim
+
 from geocode import geocode_address
 
 KNOWN_ADDRESSES_FILE = "known_addresses.pkl"
@@ -46,8 +48,10 @@ def get_location(address, known_addresses):
     return (full_address, location, successful_geocode)
 
 
-def parse_city_info_to_geojson(city_info, known_addresses, geojson, city_group=None):
-    city = city_info["city"]
+def parse_city_info_to_geojson(
+    city_info, known_addresses, geojson, event_id, city_group=None
+):
+    city = city_info["city"].strip()  # Philadelphia has a trailing whitespace
     logging.info(f"Parsing city {city}")
     locations = city_info.get("locations")
     address = city_info.get("address")
@@ -55,7 +59,7 @@ def parse_city_info_to_geojson(city_info, known_addresses, geojson, city_group=N
         # We're actually in a city group, so parse the nested locations
         for location in locations:
             parse_city_info_to_geojson(
-                location, known_addresses, geojson, city_group=city
+                location, known_addresses, geojson, event_id, city_group=city
             )
         if address:
             logging.warning(
@@ -64,6 +68,7 @@ def parse_city_info_to_geojson(city_info, known_addresses, geojson, city_group=N
         return
     if not address:
         logging.warning(f"Could not find address for {city}. City info: {city_info}")
+        update_city_json(city, False, city_group, event_id)
         return
     address_str, location, success = get_location(address, known_addresses)
     if not location:
@@ -82,7 +87,7 @@ def parse_city_info_to_geojson(city_info, known_addresses, geojson, city_group=N
             "successful_geocode": success,
             "start_time": city_info.get("start_time"),
             "stop_time": city_info.get("stop_time"),
-            "notes": city_info.get("notes"),
+            "notes": re.sub("&nbsp;", " ", city_info.get("notes")),
         },
         "geometry": {
             "type": "Point",
@@ -91,6 +96,47 @@ def parse_city_info_to_geojson(city_info, known_addresses, geojson, city_group=N
     }
     # Add the feature to the geojson
     geojson["features"].append(feature)
+    update_city_json(city, True, city_group, event_id)
+
+
+def update_city_json(city, found_address, city_group, event_id):
+    """
+    Updates the status of the city based on its presence in the event
+    """
+
+    search_name = city
+    if city_group and city_group != "Bay Area":
+        search_name = f"{city_group} ({city})"
+
+    for shortcut_substring in ["Arlington", "Jersey City"]:
+        if shortcut_substring in search_name:
+            search_name = shortcut_substring
+
+    # Backup the json before we overwrite it
+    shutil.copyfile("data/cities.json", "data/cities_backup.json")
+    cities_json = json.load(open("data/cities.json", "r"))
+    matched_city = None
+    for i, c in enumerate(cities_json):
+        if search_name in c["name"]:
+            matched_city = c
+            matched_city_index = i
+            break
+    if not matched_city:
+        logging.warning(f"Could not find city {search_name} in cities.json")
+        return
+
+    logging.info(f"Updating city {matched_city['name']} with event {event_id}")
+
+    if event_id in matched_city["event_ids"]:
+        return
+
+    if found_address:
+        matched_city["event_ids"].append(int(event_id))
+        matched_city["status"] = "active"
+    else:
+        matched_city["status"] = "hiatus"
+    cities_json[matched_city_index] = matched_city
+    json.dump(cities_json, open("data/cities.json", "w+"))
 
 
 def get_locations(event_id):
@@ -107,7 +153,7 @@ def get_locations(event_id):
     except FileNotFoundError:
         known_addresses = {}
     for city_info in response_json["locations"]:
-        parse_city_info_to_geojson(city_info, known_addresses, geojson)
+        parse_city_info_to_geojson(city_info, known_addresses, geojson, event_id)
 
     pickle.dump(known_addresses, open(KNOWN_ADDRESSES_FILE, "wb"))
     # Save the geojson

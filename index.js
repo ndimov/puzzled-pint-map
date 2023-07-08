@@ -19,6 +19,7 @@ const eventIds = {
 const CITY_COLORS = {
   active: "#00FF00",
   defunct: "#FF0000",
+  hiatus: "yellow",
 };
 
 layerControl = L.control.layers([], [], { collapsed: false }).addTo(map);
@@ -56,6 +57,7 @@ fetch("./data/cities.json")
       onEachFeature: function (feature, layer) {
         const properties = feature.properties;
         let popup = `<h3><a href="${properties.url}">${properties.name}</a></h3>`;
+        popup += `<p>debug info: ${properties.status} ${properties.event_ids}</p>`
         layer.bindPopup(popup);
       },
     });
