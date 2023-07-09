@@ -21,6 +21,7 @@ def parse_cities(html):
             'url': city_html['href'],
             'status': 'defunct',  # Assume a city is defunct until proven otherwise
             'event_ids': [],
+            'remote_event_ids': [],
         }
         location = geocode_address(name)
         if location:

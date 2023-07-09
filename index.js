@@ -53,6 +53,12 @@ const CITY_COLORS = {
 
 layerControl = L.control.layers([], [], { collapsed: false }).addTo(map);
 
+function event_ids_to_names(event_ids) {
+  return event_ids
+    .map((id) => events.find((event) => event.id == id).name)
+    .join(", ");
+}
+
 fetch("./data/cities.json")
   .then((response) => response.json())
   .then((cities) => {
@@ -87,10 +93,11 @@ fetch("./data/cities.json")
         let popup = `<h3><a href="${properties.url}">${properties.name}</a></h3>`;
         popup += `<p>status: ${
           properties.status
-        }</p><p>past events: ${properties.event_ids
-          .map((id) => events.find((event) => event.id == id).name)
-          // .filter((name) => name)
-          .join(", ")}</p>`;
+        }</p><p>past events: ${event_ids_to_names(
+          properties.event_ids
+        )}</p><p>past remote/inactive events: ${event_ids_to_names(
+          properties.remote_event_ids
+        )}`;
         layer.bindPopup(popup);
       },
     });
@@ -164,4 +171,4 @@ events.forEach((event) => {
         events[events.length - 1].geojsonLayer.addTo(map);
       }
     });
-})
+});

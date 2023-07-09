@@ -78,7 +78,7 @@ def parse_city_info_to_geojson(
         logging.warning(f"Could not find address for {city}. City group: {city_group} City info: {city_info}")
         if city_group in ["Seattle", "Bay Area"]:
             # These places list two events on the same page, so we could update it manually
-            # FIXME currently we just put a pin at the city because manual parsing is expensive
+            # FIXME currently we just put a pin at the city because manual parsing is tricky
             manual_locations = True
         matched_city = update_city_json(city, False, city_group, event_id)
         if not matched_city:
@@ -111,6 +111,9 @@ def parse_city_info_to_geojson(
     geojson["features"].append(feature)
 
 
+def sort_event_ids(event_ids):
+    return sorted(list(set(event_ids)), reverse=True)
+
 def update_city_json(city, found_address, city_group, event_id):
     """
     Updates the status of the city based on its presence in the event.
@@ -140,15 +143,17 @@ def update_city_json(city, found_address, city_group, event_id):
 
     logging.info(f"Updating city {matched_city['name']} with event {event_id}")
 
-    if event_id in matched_city["event_ids"]:
-        return matched_city
+    # if event_id in matched_city["event_ids"]:
+    #     return matched_city
 
     if found_address or (city_group, city) in [("Bay Area", "San Francisco"), ("Seattle", "City")]:
         matched_city["event_ids"].append(int(event_id))
-        matched_city["event_ids"] = sorted(list(set(matched_city["event_ids"])), reverse=True)
+        matched_city["event_ids"] = sort_event_ids(matched_city["event_ids"])
         if PRESENT_ID - event_id <= 3:
             matched_city["status"] = "active"
     else:
+        matched_city["remote_event_ids"].append(int(event_id))
+        matched_city["remote_event_ids"] = sort_event_ids(matched_city["remote_event_ids"])
         if PRESENT_ID - event_id <= 3:
             matched_city["status"] = "hiatus"
     # TODO: set active/hiatus events to defunct if they haven't appeared recently
