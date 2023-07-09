@@ -2,7 +2,8 @@ If you have suggestions or would like to contribute, please reach out!
 
 # Todo
 * Handle multiple locations listed under one city (e.g. San Francisco, Seattle)
-* Mark locations with a temporary(?) hiatus with red markers on the map
+* Lazily load geojson layers when clicking on overlay
+* Add view for all past event locations in a particular city
 
 # Notes
 
