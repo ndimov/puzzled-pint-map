@@ -16,6 +16,7 @@ from geopy.geocoders import GoogleV3, Nominatim
 from geocode import geocode_address
 
 KNOWN_ADDRESSES_FILE = "known_addresses.pkl"
+PRESENT_ID = 190
 
 
 def get_location(address, known_addresses):
@@ -66,14 +67,26 @@ def parse_city_info_to_geojson(
                 f"Location {city} has nested locations, but also an address. Skipping address."
             )
         return
-    if not address:
-        logging.warning(f"Could not find address for {city}. City info: {city_info}")
-        update_city_json(city, False, city_group, event_id)
-        return
-    address_str, location, success = get_location(address, known_addresses)
-    if not location:
-        logging.warning(f"Could not find location for {city}.")
-        return
+    if address:
+        address_str, location, success = get_location(address, known_addresses)
+        if not location:
+            logging.warning(f"Could not find location for {city}.")
+            return
+        update_city_json(city, True, city_group, event_id)
+        latitude, longitude = location.latitude, location.longitude
+    else:
+        logging.warning(f"Could not find address for {city}. City group: {city_group} City info: {city_info}")
+        if city_group in ["Seattle", "Bay Area"]:
+            # These places list two events on the same page, so we could update it manually
+            # FIXME currently we just put a pin at the city because manual parsing is expensive
+            manual_locations = True
+        matched_city = update_city_json(city, False, city_group, event_id)
+        if not matched_city:
+            logging.warning(f"Not placing icon because city coordinates are not known")
+            return
+        coordinates = matched_city["coordinates"]
+        latitude, longitude = coordinates["latitude"], coordinates["longitude"]
+        address_str = None
     name = city
     if city_group:
         name = f"{city_group} - {city}"
@@ -84,24 +97,24 @@ def parse_city_info_to_geojson(
             "bar": city_info.get("bar"),
             "bar_url": city_info.get("bar_url"),
             "address": address_str,
-            "successful_geocode": success,
+            # "successful_geocode": success,
             "start_time": city_info.get("start_time"),
             "stop_time": city_info.get("stop_time"),
             "notes": re.sub("&nbsp;", " ", city_info.get("notes")),
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [location.longitude, location.latitude],
+            "coordinates": [longitude, latitude],
         },
     }
     # Add the feature to the geojson
     geojson["features"].append(feature)
-    update_city_json(city, True, city_group, event_id)
 
 
 def update_city_json(city, found_address, city_group, event_id):
     """
-    Updates the status of the city based on its presence in the event
+    Updates the status of the city based on its presence in the event.
+    Returns the updated city json.
     """
 
     search_name = city
@@ -128,15 +141,20 @@ def update_city_json(city, found_address, city_group, event_id):
     logging.info(f"Updating city {matched_city['name']} with event {event_id}")
 
     if event_id in matched_city["event_ids"]:
-        return
+        return matched_city
 
-    if found_address:
+    if found_address or (city_group, city) in [("Bay Area", "San Francisco"), ("Seattle", "City")]:
         matched_city["event_ids"].append(int(event_id))
-        matched_city["status"] = "active"
+        matched_city["event_ids"] = sorted(list(set(matched_city["event_ids"])), reverse=True)
+        if PRESENT_ID - event_id <= 3:
+            matched_city["status"] = "active"
     else:
-        matched_city["status"] = "hiatus"
+        if PRESENT_ID - event_id <= 3:
+            matched_city["status"] = "hiatus"
+    # TODO: set active/hiatus events to defunct if they haven't appeared recently
     cities_json[matched_city_index] = matched_city
     json.dump(cities_json, open("data/cities.json", "w+"))
+    return matched_city
 
 
 def get_locations(event_id):
@@ -162,8 +180,14 @@ def get_locations(event_id):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python parse_locations.py <event_id>")
+    if len(sys.argv) < 2:
+        print("Usage: python parse_locations.py <first_event_id> [second_event_id]")
         sys.exit()
-    event_id = sys.argv[1]
-    get_locations(event_id)
+    first_event_id = sys.argv[1]
+    if len(sys.argv) == 3:
+        second_event_id = sys.argv[2]
+    else:
+        second_event_id = first_event_id
+
+    for event_id in range(int(first_event_id), int(second_event_id) + 1):
+        get_locations(event_id)

@@ -11,10 +11,39 @@ var osm = new L.TileLayer(
 
 var map = new L.Map("map").addLayer(osm).setView([39.82, -98.58], 3);
 
-const eventIds = {
-  "June 2023": 189,
-  "July 2023": 190,
-};
+var remoteIcon = L.icon({
+  iconUrl:
+    "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png",
+  shadowUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+const events = [
+  {
+    id: 186,
+    name: "March 2023",
+  },
+  {
+    id: 187,
+    name: "April 2023",
+  },
+  {
+    id: 188,
+    name: "May 2023",
+  },
+  {
+    id: 189,
+    name: "June 2023",
+  },
+  {
+    id: 190,
+    name: "July 2023",
+  },
+];
 
 const CITY_COLORS = {
   active: "#00FF00",
@@ -41,7 +70,6 @@ fetch("./data/cities.json")
         },
       });
     });
-    console.log(geojson);
 
     var geojsonLayer = new L.GeoJSON(geojson, {
       pointToLayer: function (feature, latlng) {
@@ -57,7 +85,12 @@ fetch("./data/cities.json")
       onEachFeature: function (feature, layer) {
         const properties = feature.properties;
         let popup = `<h3><a href="${properties.url}">${properties.name}</a></h3>`;
-        popup += `<p>debug info: ${properties.status} ${properties.event_ids}</p>`
+        popup += `<p>status: ${
+          properties.status
+        }</p><p>past events: ${properties.event_ids
+          .map((id) => events.find((event) => event.id == id).name)
+          // .filter((name) => name)
+          .join(", ")}</p>`;
         layer.bindPopup(popup);
       },
     });
@@ -65,13 +98,19 @@ fetch("./data/cities.json")
     layerControl.addOverlay(geojsonLayer, "Cities");
   });
 
-Object.keys(eventIds).forEach((key) => {
-  eventId = eventIds[key];
-
-  fetch(`./data/locations_${eventId}.geojson`)
+processedEvents = 0;
+events.forEach((event) => {
+  fetch(`./data/locations_${event.id}.geojson`)
     .then((response) => response.json())
     .then((locations) => {
       var geojsonLayer = new L.GeoJSON(locations, {
+        pointToLayer: function (feature, latlng) {
+          if (feature.properties.address) {
+            return L.marker(latlng);
+          } else {
+            return L.marker(latlng, { icon: remoteIcon });
+          }
+        },
         onEachFeature: function (feature, layer) {
           const properties = feature.properties;
           let popup = `<h3>${properties.name}</h3>`;
@@ -92,26 +131,37 @@ Object.keys(eventIds).forEach((key) => {
               start +
               " – " +
               stop +
-              "</span></p>";
+              ` (${event.name})</span></p>`;
           }
 
-          var barText;
-          if (properties.bar_url) {
-            barText = `<a href=${properties.bar_url}>${properties.bar}</a>`;
-          } else {
-            barText = properties.bar;
+          if (properties.address) {
+            var barText;
+            if (properties.bar_url) {
+              barText = `<a href=${properties.bar_url}>${properties.bar}</a>`;
+            } else {
+              barText = properties.bar;
+            }
+            popup += `<span><i class="fa fa-map-marker"></i> ${barText}</span><br />`;
+            popup += `<span>${
+              properties.address
+            } (<a href=https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              properties.address
+            )} target="_blank">Google Maps</a>)</span>`;
           }
-          popup += `<span><i class="fa fa-map-marker"></i> ${barText}</span><br />`;
-          popup += `<span>${
-            properties.address
-          } (<a href=https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-            properties.address
-          )} target="_blank">Google Maps</a>)</span>`;
           popup += `<p>${properties.notes}</p>`;
           layer.bindPopup(popup);
         },
       });
-      // geojsonLayer.addTo(map);
-      layerControl.addOverlay(geojsonLayer, key);
+      event["geojsonLayer"] = geojsonLayer;
+      processedEvents++;
+      // All geojsons are loaded, so display the overlay toggles in order
+      if (processedEvents == events.length) {
+        events.forEach((event) => {
+          layerControl.addOverlay(event.geojsonLayer, event.name);
+        });
+
+        // Display the most recent event's layer
+        events[events.length - 1].geojsonLayer.addTo(map);
+      }
     });
-});
+})

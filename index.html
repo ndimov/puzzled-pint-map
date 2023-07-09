@@ -21,10 +21,14 @@
   </head>
   <body>
     <h1>Puzzled Pint Map</h1>
-    <p>Click on a location to see more info about that city's event.</p>
+    <p>I built this map to make it easier to find <a href="https://puzzledpint.com/">Puzzled Pint</a> events near me.</p>
+    <h3>Usage</h3>
     <p>Select layers in the top right of the map.</p>
-    <p>This is still under development! Use at your own risk.</p>
-    <div id="map" style="width: 800px; height: 600px"></div>
+    <p>The "Cities" layer with circular markers is based on the locations list on the homepage. Red cities are defunct, yellow are in hiatus (described recently on the webpage without a live in-person event), and green are active.</p>
+    <p>You can also view the locations of events for a particular month. Clicking on a pin gives more info. Some markers are yellow in case an exact location could not be found. Typically this means the city can't hold a live event that month.</p>
+    <h3>Note</h3>
+    <p>This is still <a href="https://github.com/ndimov/puzzled-pint-map">under development</a>, and suggestions or improvements are welcome! Data may be out of date or incorrect, so please check the website to confirm.</p>
+    <div id="map" style="max-width: 800px; height: 600px"></div>
     <script src="index.js"></script>
   </body>
 </html>
