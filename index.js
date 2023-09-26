@@ -43,6 +43,19 @@ const events = [
     id: 190,
     name: "July 2023",
   },
+  {
+    id: 191,
+    name: "August 2023",
+  },
+  {
+    id: 192,
+    name: "September 2023",
+  },
+  {
+    id: 193,
+    name: "October 2023",
+  },
+
 ];
 
 const CITY_COLORS = {

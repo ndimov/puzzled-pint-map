@@ -16,7 +16,7 @@ from geopy.geocoders import GoogleV3, Nominatim
 from geocode import geocode_address
 
 KNOWN_ADDRESSES_FILE = "known_addresses.pkl"
-PRESENT_ID = 190
+PRESENT_ID = 193
 
 
 def get_location(address, known_addresses):
@@ -100,7 +100,7 @@ def parse_city_info_to_geojson(
             # "successful_geocode": success,
             "start_time": city_info.get("start_time"),
             "stop_time": city_info.get("stop_time"),
-            "notes": re.sub("&nbsp;", " ", city_info.get("notes")),
+            "notes": re.sub("&nbsp;", " ", city_info.get("notes","")),
         },
         "geometry": {
             "type": "Point",
